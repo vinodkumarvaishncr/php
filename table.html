@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mismatch Table</title>
+  <style>
+    body {
+      background-color: #1e1e1e;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .datadownrow {
+      width: 100%;
+      overflow: hidden;
+    }
+
+    #recordTable_2 {
+      background-color: #2a2a2a;
+      color: #fff;
+      border-collapse: collapse;
+      width: 100%;
+      font-size: 14px;
+    }
+
+    #recordTable_2 thead {
+      background-color: #111;
+      color: #fff;
+      position: sticky;
+      top: 0;
+      z-index: 2;
+    }
+
+    #recordTable_2 th,
+    #recordTable_2 td {
+      padding: 8px 12px;
+      border-bottom: 1px solid #444;
+      text-align: left;
+    }
+
+    #recordTable_2 tr:hover {
+      background-color: #333;
+    }
+
+    #recordTable_2 td.mismatched {
+      background-color: red !important;
+      color: white;
+      font-weight: bold;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Channel Mismatch Table</h2>
+
+  <div class="datadownrow">
+    <table id="recordTable_2" class="display nowrap" style="height:30vh;">
+      <thead class="tblcls">
+        <tr>
+          <th>S.NO</th>
+          <th>Channel Name</th>
+          <th>SCH Start Date time</th>
+          <th>Sch End Time</th>
+          <th>Act Start time</th>
+          <th>Status</th>
+          <th>duration</th>
+          <th>Event Id</th>
+          <th>Difference</th>
+        </tr>
+      </thead>
+      <tbody id="recordTable_2_tr">
+        <tr>
+          <td>1</td>
+          <td>SG2_MAIN</td>
+          <td>2025-07-18 18:18:40</td>
+          <td>2025-07-17 18:18:40</td>
+          <td>2025-07-18 23:46:02</td>
+          <td class="mismatched">Mismatched</td>
+          <td>00:00:00:00</td>
+          <td>NULL</td>
+          <td>-66754 sec</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>SG2_MAIN</td>
+          <td>2025-07-18 18:28:40</td>
+          <td>2025-07-18 18:29:40</td>
+          <td>2025-07-18 23:46:02</td>
+          <td class="mismatched">Mismatched</td>
+          <td>00:01:00:00</td>
+          <td>NULL</td>
+          <td>-67354 sec</td>
+        </tr>
+        <!-- Add more rows as needed -->
+      </tbody>
+    </table>
+  </div>
+
+</body>
+</html>
