@@ -5,7 +5,7 @@ pool: "agent5"
 
 variables:
   path: '$(System.DefaultWorkingDirectory)'
-  connection: 'connection_new'
+  connection: 'connection_new13oct'
   storageAccount: 'vinodstorgeforstatefile'
   container: 'vinodcontainerforstatefile'
   key: 'review.tfstate'
