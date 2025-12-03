@@ -1,4 +1,4 @@
-pool: Default
+pool: agent1_pool
 
 trigger: none 
 
@@ -80,7 +80,7 @@ stages:
   jobs: 
   - job: TerraformPlan
     displayName: Terraform Plan
-    pool: Default
+    pool: agent1_pool
     steps: 
     - task: TerraformTask@5
       inputs:
@@ -116,7 +116,7 @@ stages:
   jobs:
   - job: TerraformApply
     displayName: Terraform Apply
-    pool: Default
+    pool: agent1_pool
     steps:
     - task: TerraformTask@5
       inputs:
