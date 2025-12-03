@@ -7,15 +7,15 @@ terraform {
   }
 
   backend "azurerm" {
-    resource_group_name  = "vinod_main_rg"
-    storage_account_name = "vinodstorgeforstatefile"
-    container_name       = "vinodcontainerforstatefile"
-    key                  = "manual.terraform.tfstate"
+      resource_group_name  = "vinod_main_rg"
+      storage_account_name = "vinodstoragemain"
+      container_name       = "container22"
+      key                  = "vinodkey.tfstate"
   }
    
 }
 
 provider "azurerm" {
   features {}
-  subscription_id = "239a3096-3fb0-4f7c-8060-6127b0f8808e"
+  subscription_id = "95a90f4b-7e15-47ba-95ab-0d52bac078e4"
 }
