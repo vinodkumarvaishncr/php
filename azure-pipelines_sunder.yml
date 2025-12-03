@@ -5,7 +5,7 @@ trigger: none
 stages:
 - stage: PreCommit
   displayName: Pre-Commit / Static Analysis Stage
-  pool: Default
+  pool: agent1_pool
   jobs: 
   - job: TerraformValidate
     displayName: Terraform Validate
