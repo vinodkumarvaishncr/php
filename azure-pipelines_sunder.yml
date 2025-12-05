@@ -70,6 +70,12 @@ stages:
     displayName: InfraCost
     steps:
     - task: PowerShell@2
+      displayName: Install Infracost
+      inputs:
+        targetType: 'inline'
+        script: 'iex (iwr -useb https://raw.githubusercontent.com/infracost/infracost/master/scripts/install.ps1)'
+
+    - task: PowerShell@2
       inputs:
         targetType: 'inline'
         script: 'infracost breakdown --path=.'
