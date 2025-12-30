@@ -15,8 +15,12 @@ jobs:
 
     - name: List files
       shell: powershell
-      run: Get-ChildItem
+      run: |
+        pwd
+        Get-ChildItem
     
     - name: "ls command"
       shell: powershell
-      run: ls
+      run: |
+        pwd
+        ls
