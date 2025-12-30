@@ -14,9 +14,9 @@ jobs:
       run: echo Hello world!
 
     - name: List files
-      shell: pwsh
+      shell: powershell
       run: Get-ChildItem
     
     - name: "ls command"
-      shell: pwsh
+      shell: powershell
       run: ls
