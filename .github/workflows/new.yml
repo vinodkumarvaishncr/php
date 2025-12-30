@@ -10,12 +10,16 @@ jobs:
   test:
     runs-on: [self-hosted, Windows, X64]
     steps:
+    - name: "Checkout repo"
+      uses: actions/checkout@v6.0.1
+  
     - name: "Hiii"
       run: echo Hello world!
 
     - name: List files
       shell: powershell
       run: |
+        echo $env:GITHUB_WORKSPACE
         pwd
         Get-ChildItem
     
