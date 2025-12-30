@@ -11,7 +11,12 @@ jobs:
     runs-on: [self-hosted, Windows, X64]
     steps:
     - name: "Hiii"
-    - run: echo Hello world!
+      run: echo Hello world!
 
+    - name: List files
+      shell: pwsh
+      run: Get-ChildItem
+    
     - name: "ls command"
-    - run: ls
+      shell: pwsh
+      run: ls
