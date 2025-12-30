@@ -10,4 +10,8 @@ jobs:
   test:
     runs-on: [self-hosted, Windows, X64]
     steps:
+    - name: "Hiii"
     - run: echo Hello world!
+
+    - name: "ls command"
+    - run: ls
