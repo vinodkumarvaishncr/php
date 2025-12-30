@@ -8,6 +8,6 @@ on:
 
 jobs:
   test:
-    runs-on: "VKumar"
+    runs-on: [self-hosted, Windows, X64]
     steps:
     - run: echo Hello world!
